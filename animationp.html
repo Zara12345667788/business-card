@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: black;
+            height: 122px;
+
+        }
+
+        ul li {
+            color: white;
+            list-style: none;
+            display: inline;
+            padding: 10px;
+        }
+
+        li {
+            padding-top: 10px;
+        }
+
+        main {
+            height: 80vh;
+            background: blue;
+        }
+
+        .progress {
+            background: red;
+            height: 3px;
+            animation: load 2s 1 normal;
+
+        }
+
+        @keyframes load {
+            0% {
+                width: 0vw;
+            }
+
+            50% {
+                width: 60vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+
+        }
+
+        /* @keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(260deg);
+    }
+100%{
+    transform: rotate(360deg);
+}
+    
+} */
+
+        .slider {
+            height: 20vw;
+            background: white;
+            overflow: hidden;
+            display: flex;
+        }
+
+        img {
+            width: 80vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+
+        }
+
+        .img1 {
+            transform: translate(0vw);
+
+        }
+
+        .img2 {
+            transform: translate(100vw);
+
+        }
+
+        .img3 {
+            transform: translate(-100vw);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress">
+
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slider">
+
+            <img class="img1" src="sara.jpg" alt="">
+            <img class="img2" src="ss.jpg" alt="">
+            <img class="img3" src="sara.jpg" alt="">
+        </div>
+    </main>
+</body>
+
+</html>
